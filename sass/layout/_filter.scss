@@ -1,0 +1,14 @@
+.filter {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  
+    &-block {
+    margin: 0 0 50px;
+    text-align: center;
+    }  
+}
+
+.project-filter {
+    display: flex;
+    flex-wrap: wrap;
+  }

@@ -1,0 +1,18 @@
+.logo-customers {
+    display: flex;
+    border: 1px solid $color-leter-icon;
+    width: 170px;
+    height: 90px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus{
+    border: 1px solid $color-accent;
+}
+    &:hover .icon-customers {
+    fill: $color-accent;
+}
+}

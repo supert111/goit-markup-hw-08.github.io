@@ -1,0 +1,24 @@
+.footer-form {
+    display: block;
+    margin-left: auto;
+  
+  }
+  .email-form-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: $color-background;
+    margin: 0 12px 0 0;
+    padding: 15px 16px;
+    color: $color-secondary-text;
+
+   &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: $color-secondary-text;
+    }
+  }
