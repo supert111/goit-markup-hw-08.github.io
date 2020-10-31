@@ -7,7 +7,7 @@
   opacity: 1;
   background: rgba(0, 0, 0, 0.2); 
   z-index: 1;
-  overflow: auto;
+  overflow-y: auto;
   transition: all 200ms linear;
 
    &.is-hidden {
@@ -16,13 +16,19 @@
       pointer-events: none;
   }
 }
+.modal-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  padding: 15px;
+}
 .modal {
   position: relative;
-  margin: auto;
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
   background: #FFFFFF;
@@ -33,7 +39,7 @@
   padding: 40px;
  
  .backdrop.is-hidden & {
-  margin: auto;
+  // margin: auto;
   transform: scale(0.3); 
   }
 }
