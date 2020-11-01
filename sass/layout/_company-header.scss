@@ -1,9 +1,10 @@
 .company-header {
+  position: relative;
     border-bottom: 1px solid #ECECEC;
   }
 
    /* Position-flex Block model + flex */
-.position-flex {
+  .position-flex {
     display: flex;
     align-items: center;
     padding: 0;

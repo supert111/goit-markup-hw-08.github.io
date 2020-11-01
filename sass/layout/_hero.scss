@@ -1,31 +1,31 @@
-.hero {
-    background-color: $color-hero-background;
-    padding: 200px 0;
-    text-align: center;
-    /* Element background */
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient( 
-      to top, 
-      rgba(47, 48, 58, 0.4), 
-      rgba(47, 48, 58, 0.4)),
-    url(../images/Img-hero.jpg);
+// .hero {
+//     background-color: $color-hero-background;
+//     padding: 200px 0;
+//     text-align: center;
+//     /* Element background */
+//     max-width: 1600px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     background-image: linear-gradient( 
+//       to top, 
+//       rgba(47, 48, 58, 0.4), 
+//       rgba(47, 48, 58, 0.4)),
+//     url(../images/Img-hero.jpg);
     
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
   
-    &-title {
-         color: $color-primary-white;
-         /* Hero text size*/
-        width: 696px;
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.364;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        /*Hero Block model*/
-         margin: 0 auto 30px;
-    }
-}
+//     &-title {
+//          color: $color-primary-white;
+//          /* Hero text size*/
+//         width: 696px;
+//         font-weight: 900;
+//         font-size: 44px;
+//         line-height: 1.364;
+//         letter-spacing: 0.06em;
+//         text-transform: uppercase;
+//         /*Hero Block model*/
+//          margin: 0 auto 30px;
+//     }
+// }
