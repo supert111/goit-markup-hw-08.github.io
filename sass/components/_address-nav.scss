@@ -4,11 +4,35 @@
     font-weight: 500;
     letter-spacing: 0.02em;
     line-height: 1.143;
-    text-align: center;
 
+    @media screen and (max-width: 767px) {
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    line-height: 1.167;
+    text-align: center;
+    
     .link:not(:last-child) { 
         margin-bottom: 16px;
     }
+
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 12px;
+        line-height: 1.167;
+        padding: 32px 0 0;
+        .link:not(:last-child) { 
+            margin-bottom: 10px;
+        }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        margin: 0 0 0 auto;
+        padding: 32px 0;
+        align-items: center;
+        }
+        
+    }
+
+
     .link {
         display: block;
         color: $color-primary-text;
@@ -47,6 +71,16 @@
     color: $color-accent; 
     fill: $color-accent;
   } 
+  @media screen and (min-width: 768px) {
+      width: 14px;
+    .mail &,
+    .phone & {
+     margin-right: 8px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+}
 }
 
 // .address-nav {
