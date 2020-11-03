@@ -1,0 +1,45 @@
+.icon-address {
+    fill: $color-primary-text;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+   .mail &,
+   .phone & {
+    margin-right: 10px;
+   }
+  
+      &:hover,
+      &:focus,
+      .mail:hover &, 
+      .mail:focus &,
+      .phone:hover &,
+      .phone:focus & {  
+    color: $color-accent; 
+    fill: $color-accent;
+  } 
+ 
+
+  @media screen and (max-width: 767px) {
+       
+    width: 16px;
+    height: 10px;
+    
+  .mail &,
+  .phone & {
+   margin-right: 10px;
+  }
+}
+
+  @media screen and (min-width: 768px) {
+       
+      width: 14px;
+      height: 10px;
+      
+    .mail &,
+    .phone & {
+     margin-right: 5px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+}
+}

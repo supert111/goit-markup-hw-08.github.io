@@ -74,20 +74,19 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .logo {
     padding: 26px 0;
     margin-right: 88px;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
     line-height: 1.192;
     width: 145px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding: 24px 0 25px;
     margin-right: 93px;
   }
 }
@@ -158,6 +157,13 @@ body {
   .webstudio-nav {
     margin-right: 304px;
   }
+  .webstudio-nav .item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .webstudio-nav .item:not(:last-child) .link {
+    position: relative;
+    padding: 0 0 32px 0;
+  }
 }
 
 .address-nav {
@@ -190,7 +196,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .address-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -200,6 +206,9 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .address-nav .link:not(:last-child) {
+    margin: 0 30px 0 0;
   }
 }
 
@@ -219,36 +228,6 @@ body {
 .address-nav .link:focus {
   color: #2196F3;
   fill: #2196F3;
-}
-
-.icon-address {
-  fill: #757575;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mail .icon-address,
-.phone .icon-address {
-  margin-right: 10px;
-}
-
-.icon-address:hover, .icon-address:focus,
-.mail:hover .icon-address,
-.mail:focus .icon-address,
-.phone:hover .icon-address,
-.phone:focus .icon-address {
-  color: #2196F3;
-  fill: #2196F3;
-}
-
-@media screen and (min-width: 768px) {
-  .icon-address {
-    width: 14px;
-  }
-  .mail .icon-address,
-  .phone .icon-address {
-    margin-right: 8px;
-  }
 }
 
 .webstudio-nav .active {
