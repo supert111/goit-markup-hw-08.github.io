@@ -3,7 +3,12 @@
     @media screen and (min-width: 1200px) {
         padding-bottom: 94px;
     }
-
+    &.work-section {
+        display: none;
+        @media screen and (min-width: 1200px) {
+            display: block;
+        }
+    }
   /* Section title h2*/
   &-title {
     color: $color-title-text;

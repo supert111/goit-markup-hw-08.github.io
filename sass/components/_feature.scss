@@ -23,14 +23,23 @@
     
     @media screen and (min-width: 768px) {
         display: flex;
+        flex-wrap: wrap;
     }
-  
+    @media screen and (min-width: 769px) {
+      flex-wrap: nowrap;
+  }
+
+    .item {
+      width: calc(100vw / 1);
+      @media screen and (min-width: 768px) {
+        width: calc(100vw / 2 - 30px);
+    }
+    }
   /* Decorative effects */
   .item::before {
     display: block;
     // display: inline-block;
     content: "";
-    width: calc(100% / 1);
     height: 120px;
     background-color: $color-secondary-background;
     /* background-size: contain; */
