@@ -1,8 +1,20 @@
 .item {
     &:not(:last-child) {
-      @media screen and (max-width: 1199px) {
+      @media screen and (max-width: 767px) {
         margin-bottom: 30px;
     } 
+    }
+    &:nth-last-child(n+3) {
+        @media screen and (min-width: 768px) and (max-width: 780px) {
+            margin-bottom: 30px;
+        }
+
+    }
+
+    &.plus {
+        @media screen and (max-width: 767px) {
+            margin-top: 60px;
+        }  
     }
 //     &:not(:last-child) {
 //       margin-bottom: 40px; 

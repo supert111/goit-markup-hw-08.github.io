@@ -3,8 +3,18 @@
     @media screen and (min-width: 767px) {
         display: flex;
     }
+    @media screen and (min-width: 768px) {
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: 769px) {
+        flex-wrap: nowrap;
+    }
+    .item {
+        @media screen and (min-width: 768px) {
+        width: calc(100vw / 2 - 30px);
+        }
+    }
 }
-
 // .team {
 //     display: flex;
 //     text-align: center;
