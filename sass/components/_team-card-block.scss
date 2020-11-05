@@ -1,3 +1,19 @@
+.team-card-block {
+    padding: 30px 0;
+    
+  /* social-links */
+   .social-links {
+    padding: 0 32px;
+  }
+  .social-circle {
+    background-color: $color-primary-white;
+  }
+   .button-social {
+    fill: $color-leter-icon;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  }
+// ========================
 // .team-card-block {
 //     padding: 30px 0;
     
