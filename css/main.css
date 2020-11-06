@@ -490,6 +490,77 @@ body {
   }
 }
 
+.footer-form {
+  display: block;
+  margin: 0 0 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-form {
+    margin: 60px 0 0 0;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form {
+    margin: 0 0 0 166px;
+    text-align: center;
+  }
+}
+
+.email-form-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2F303A;
+  margin: 0 12px 0 0;
+  padding: 15px 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 480px) {
+  .email-form-input {
+    width: 450px;
+    margin: 0 0 20px;
+  }
+}
+
+.email-form-input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.email-form-input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.email-form-input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.email-form-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .logo {
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -665,6 +736,12 @@ body {
   font-style: normal;
 }
 
+@media screen and (max-width: 480px) {
+  .address-nav-footer, .address-nav-footer-footer {
+    margin: 20px 0 60px;
+  }
+}
+
 .address-nav .link:hover,
 .address-nav .link:focus {
   color: #2196F3;
@@ -791,9 +868,21 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 780px) and (min-width: 768px) and (max-width: 1199px) {
+  .item:nth-last-child(n+3).minus:nth-child(n+4) {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .item.plus {
     margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .item.minus:nth-child(n+5) {
+    margin-bottom: 0;
   }
 }
 
@@ -823,6 +912,12 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .item:not(:last-child):nth-child(2n+1) {
     margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 500px) and (max-width: 768px) {
+  .item:not(:last-child):nth-child(2n+1).minus {
+    margin-right: 0;
   }
 }
 
@@ -977,6 +1072,63 @@ body {
   padding: 27px 0;
 }
 
+.regular-customers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1200px) {
+  .regular-customers {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.logo-customers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #AFB1B8;
+  width: 226px;
+  height: 90px;
+  border-radius: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 480px) {
+  .logo-customers {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-customers {
+    width: 170px;
+  }
+}
+
+.logo-customers:hover, .logo-customers:focus {
+  border: 1px solid #2196F3;
+}
+
+.logo-customers:hover .icon-customers,
+.logo-customers:focus .icon-customers {
+  fill: #2196F3;
+}
+
 .icon-address {
   fill: #757575;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1033,6 +1185,98 @@ body {
 
 .icon-customers:focus .icon-customers {
   fill: #2196F3;
+}
+
+.icon-customers:focus, .icon-customers:hover {
+  fill: #2196F3;
+}
+
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-block {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .footer-block {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.address-block {
+  margin: 0 70px 0 0px;
+}
+
+@media screen and (max-width: 480px) {
+  .address-block {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+  .address-block {
+    margin: 0 70px;
+  }
+}
+
+.address-footer {
+  color: #ffffff;
+  margin: 20px 0 9px;
+  height: 21px;
+}
+
+@media screen and (min-width: 768px) {
+  .address-footer {
+    width: 231px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .address-footer {
+    margin: 0 0 8px;
+  }
+}
+
+.address-nav-footer .link {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+}
+
+/* footer text size p */
+.title-social-links,
+.title-footer-form {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 480px) {
+  .title-social-links,
+  .title-footer-form {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1192,5 +1436,25 @@ body {
   padding: 0;
   margin: 0 0 16px;
   text-align: center;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2F303A;
+}
+
+.footer .logo {
+  margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .footer .logo {
+    padding: 0;
+  }
+}
+
+.footer .mail {
+  margin-bottom: 9px;
 }
 /*# sourceMappingURL=main.css.map */
