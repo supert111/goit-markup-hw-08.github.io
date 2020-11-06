@@ -7,8 +7,9 @@
         text-align: center;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin: 0 0 0 166px;
+        margin: 60px 0 0 166px;
         text-align: center;
+        width: 450px;
     }
   }
   .email-form-input {
@@ -22,8 +23,11 @@
     padding: 15px 16px;
     color: $color-secondary-text;
     @media screen and (max-width: 480px) {
-        width: 450px;
         margin: 0 0 20px;
+    }
+    @media screen and (max-width: 768px) {
+        width: 450px;
+        // margin: 0 0 20px;
     }
 
    &::placeholder {

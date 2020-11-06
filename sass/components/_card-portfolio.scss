@@ -20,7 +20,11 @@
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
-    width: 370px;
+    
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+  }
+    
 }
 
 .leftside{ 

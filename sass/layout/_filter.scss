@@ -1,14 +1,23 @@
-// .filter {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
+.filter {
+    padding: 60px 0; 
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
   
-//     &-block {
-//     margin: 0 0 50px;
-//     text-align: center;
-//     }  
-// }
+    &-block {
+    margin: 0 0 40px;
+    // text-align: center;
+    @media screen and (min-width: 1200px) {
+        margin: 0 0 50px;
+        text-align: center;
+    }
+    }  
+}
 
-// .project-filter {
-//     display: flex;
-//     flex-wrap: wrap;
-//   }
+.project-filter {
+    
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }

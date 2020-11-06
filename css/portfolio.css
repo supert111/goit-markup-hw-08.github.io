@@ -102,6 +102,18 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 480px) {
+  .button-secondary {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .button-secondary:not(:nth-child(n+4)) {
+    margin-bottom: 15px;
+  }
+}
+
 .button-secondary:hover, .button-secondary:focus {
   -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -205,8 +217,9 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-form {
-    margin: 0 0 0 166px;
+    margin: 60px 0 0 166px;
     text-align: center;
+    width: 450px;
   }
 }
 
@@ -225,8 +238,13 @@ body {
 
 @media screen and (max-width: 480px) {
   .email-form-input {
-    width: 450px;
     margin: 0 0 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .email-form-input {
+    width: 450px;
   }
 }
 
@@ -587,7 +605,7 @@ body {
 }
 
 .item-portfolio {
-  width: calc((100% - 60px) / 3);
+  width: calc(100% / 1);
   border: 1px solid #EEEEEE;
   position: static;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -595,6 +613,12 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .item-portfolio {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .item-portfolio:not(:nth-child(3n)) {
@@ -681,7 +705,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1100px) {
   .address-block {
-    margin: 0 70px;
+    margin: 0 165px 0 70px;
   }
 }
 
@@ -762,7 +786,12 @@ body {
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
-  width: 370px;
+}
+
+@media screen and (min-width: 1200px) {
+  .card-name {
+    width: 370px;
+  }
 }
 
 .leftside {
@@ -784,6 +813,47 @@ body {
   color: #757575;
 }
 
+.wrapping-works {
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapping-works::after {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  content: "";
+  width: 370px;
+  height: 294px;
+  background: rgba(33, 150, 243, 0.9);
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.wrapping-works-description {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 1.5556;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
+  margin: 0;
+  color: #ffffff;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @media screen and (min-width: 1200px) {
   .section-title {
     color: #212121;
@@ -803,6 +873,37 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 0;
+}
+
+.filter {
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    padding: 94px 0;
+  }
+}
+
+.filter-block {
+  margin: 0 0 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-block {
+    margin: 0 0 50px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .footer {
