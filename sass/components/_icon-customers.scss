@@ -5,4 +5,8 @@
   &:focus .icon-customers {
     fill: $color-accent;
   }
+  &:focus,
+  &:hover {
+    fill: $color-accent;
+  }
 }

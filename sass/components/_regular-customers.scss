@@ -1,4 +1,8 @@
-// .regular-customers {
-//   display: flex;
-//   justify-content: space-between;
-// }
+.regular-customers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+}
+}
