@@ -875,6 +875,12 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .feature .item::before {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .item:not(:last-child) {
     margin-bottom: 30px;
   }

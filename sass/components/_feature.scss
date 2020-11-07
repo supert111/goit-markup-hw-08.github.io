@@ -47,6 +47,9 @@
     background-position: center;
     border-radius: 4px;
     margin-bottom: 30px;
+    @media screen and (max-width: 767px){
+      width: 450px;
+    }
   }
   }
 // ================================
