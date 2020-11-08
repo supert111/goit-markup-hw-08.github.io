@@ -546,13 +546,13 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 780px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .item:nth-last-child(n+3) {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 780px) and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 768px) and (max-width: 1199px) {
   .item:nth-last-child(n+3).minus:nth-child(n+4) {
     margin-bottom: 0;
   }
@@ -593,14 +593,8 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .item:not(:last-child):nth-child(2n+1) {
-    margin-right: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 500px) and (max-width: 768px) {
-  .item:not(:last-child):nth-child(2n+1).minus {
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .item.minus {
     margin-right: 0;
   }
 }
@@ -719,7 +713,7 @@ body {
   margin: 0 70px 0 0px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .address-block {
     text-align: center;
     margin: 0;
@@ -767,7 +761,7 @@ body {
   color: #ffffff;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .title-social-links,
   .title-footer-form {
     text-align: center;

@@ -6,16 +6,12 @@
     @media screen and (min-width: 768px) {
         flex-wrap: wrap;
     }
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 1200px) {
         flex-wrap: nowrap;
     }
-    .item {
-        @media screen and (min-width: 768px) {
-        width: calc(100vw / 2 - 30px);
-        }
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
+    .item:not(:last-child):nth-child(2n+1) {
+     margin-right: 30px; 
+    }
     }
 }
-// .team {
-//     display: flex;
-//     text-align: center;
-// }
