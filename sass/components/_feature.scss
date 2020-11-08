@@ -30,14 +30,16 @@
         display: flex;
         flex-wrap: wrap;
     }
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 1200px) {
       flex-wrap: nowrap;
   }
 
     .item {
-      width: calc(100vw / 1 - 30px);
+      @media screen and (max-width: 480px) {
+        width: calc(100vw / 1 - 30px);
+    }
       @media screen and (min-width: 768px) {
-        width: calc(100vw / 2 - 30px);
+        width: 354px;
     }
     }
   /* Decorative effects */
