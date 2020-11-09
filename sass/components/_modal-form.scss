@@ -1,13 +1,13 @@
 .modal-form {
   display: flex;
   flex-direction: column;
-  width: 370px;
+  max-width: 370px;
   @media screen and (min-width: 1200px) {
     width: 448px;
 }
 
 &-title {
-  width: 370px;
+  max-width: 370px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
@@ -138,6 +138,11 @@
   color: $color-accent;
   margin-left: 3px;
 
+  &.link {
+    @media screen and (max-width: 479px){
+      text-decoration: underline;
+    }
+  }
   &::before {
     position: absolute;
     content: "";
@@ -148,7 +153,10 @@
     border-bottom: 1px;
     border-bottom-style: solid;
     bottom: 5px;
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 479px){
+      display: none;
+    }
+    @media screen and (min-width: 480px) and (max-width: 1200px) {
         width: 110px;
         bottom: 2px;
     }
